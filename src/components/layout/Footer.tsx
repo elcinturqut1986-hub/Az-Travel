@@ -42,10 +42,13 @@ export function Footer() {
       <div className="container">
         <div className="footer-grid">
           <div>
-            <a href="#home" className="logo" style={{ color: '#fff' }}>
-              <span className="logo-mark">Az</span>Travel<span>.</span>
+            <a href="#home" className="logo footer-logo">
+              <span className="logo-mark">Az</span>
+              <span className="logo-text">
+                Travel<span className="logo-dot">.</span>
+              </span>
             </a>
-            <p style={{ marginTop: 16 }}>{t.footer_desc}</p>
+            <p className="footer-desc">{t.footer_desc}</p>
             <div className="social-row">
               <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">◎</a>
               <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">f</a>
@@ -75,14 +78,14 @@ export function Footer() {
           <div>
             <h4>{t.footer_contact}</h4>
             <ul>
-              <li>📍 <span>{t.footer_address}</span></li>
-              <li>
+              <li className="footer-contact-item">📍 <span>{t.footer_address}</span></li>
+              <li className="footer-contact-item">
                 📞{' '}
                 <a className="footer-phone" href="tel:+994515331003" aria-label="0515331003 nömrəsinə zəng et">
                   0515331003
                 </a>
               </li>
-              <li>✉️ info@aztravel.az</li>
+              <li className="footer-contact-item">✉️ <a href="mailto:info@aztravel.az">info@aztravel.az</a></li>
             </ul>
           </div>
         </div>

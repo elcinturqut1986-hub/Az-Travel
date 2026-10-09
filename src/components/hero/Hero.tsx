@@ -14,8 +14,7 @@ export function Hero() {
 
   return (
     <section className={`hero${ready ? ' hero-ready' : ''}`} id="home">
-      <div className="container" style={{ position: 'relative' }}>
-        <LiveClock />
+      <div className="container hero-inner">
         <div className="hero-content">
           <span className="badge">{t.hero_badge}</span>
           <h1>
@@ -28,6 +27,7 @@ export function Hero() {
           </div>
           <StatsRow />
         </div>
+        <LiveClock />
       </div>
     </section>
   );
